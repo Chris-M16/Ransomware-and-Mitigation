@@ -5,19 +5,19 @@ import os
 with open("smem-enc", "rb") as key_file:
     symmetric_key = key_file.read()
 
-# Create a Fernet cipher with the key
+# Creates a Fernet cipher with the key
 cipher = Fernet(symmetric_key)
 
-# Define the directory to decrypt
+# Define the directory being decrypted
 directory_to_decrypt = "/home/chris/Documents"
 
-# Iterate through encrypted files in the directory
+# Loop through each encrypted file in the directory and decrypt the contents of the file and create a new file
 for filename in os.listdir(directory_to_decrypt):
     filepath = os.path.join(directory_to_decrypt, filename)
 
     # Check if it's an encrypted file
     if os.path.isfile(filepath) and filename.endswith(".pp"):
-        # Read the content of the encrypted file
+        # Read the contents of the encrypted files
         with open(filepath, "rb") as file:
             ciphertext = file.read()
 
