@@ -45,6 +45,21 @@ To decrypt the directory:
     python3 ./decrypt.py
     ```
 
+## Mitigation
+
+### Backup and Restoration Scheme
+* **Purpose:** Implementing a Backup and Restoration Scheme allows you to back up to a state before being attacked by ransomware which will in turn restore files to their normal state. For this to work well you need to have backups taken daily at the minimum. There are a lot of different schemes that can be used. The following configuration goes over the scheme we chose and the procedure we followed.
+
+* **Configuration:** 
+1. 
+2. 
+
+### Tripwire
+* **Purpose:** The purpose of using Tripwire is to detect any changes in major directories. If anything slightly changes on a file or within a directory, Tripwire will detect this and notify the admins.
+
+* **Configuration:** 
+1. 
+2. 
 
 ## Disclaimer
 
