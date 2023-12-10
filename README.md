@@ -1,4 +1,4 @@
-# Tech Journal with Proof of Concept
+# Ransomware and Mitigation Tech Journal
 
 ## Overview
 
